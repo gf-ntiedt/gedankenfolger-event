@@ -1,7 +1,7 @@
 {
     "name": "gedankenfolger/gedankenfolger-event",
     "description": "Events",
-    "version": "13.0.0",
+    "version": "13.0.1",
     "type": "typo3-cms-extension",
     "license": [
         "GPL-2.0-or-later"
