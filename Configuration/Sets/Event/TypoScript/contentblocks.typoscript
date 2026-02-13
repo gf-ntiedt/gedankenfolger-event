@@ -1,0 +1,24 @@
+tt_content{
+    gedankenfolger_event{
+        dataProcessing{
+            20 = database-query
+            20{
+                table = tx_gedankenfolger_event
+                orderBy = date_from
+                pidInList.field = gedankenfolger_event_events_sys_folder
+                as = events
+                dataProcessing {
+                    10 = files
+                    10 {
+                        references.fieldName = image
+                        as = asset
+                    }
+                }
+            }
+            30 = Gedankenfolger\GedankenfolgerEvent\DataProcessing\EventMonthsProcessor
+            30 {
+                as = monthsWithEvents
+            }
+        }
+    }
+}

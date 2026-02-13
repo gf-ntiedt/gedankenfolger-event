@@ -1,0 +1,81 @@
+/* Event block SCSS
+   - designed for Bootstrap 5.3 variables and overrides
+*/
+.gedankenfolger_event {
+  .months-of-year{
+    .pagination{
+      border: 1px solid var(--#{$prefix}primary);
+      .page-item {
+        &.page-item-month{
+          flex-grow: 1;
+          .page-link{
+            width: 100%;
+          }
+        }
+        .page-link{
+          height: 100%;
+          color: var(--#{$prefix}dark);
+          font-size: $h2-font-size;
+          border: 0;
+        }
+        &.active{
+          .page-link{
+            background-color: var(--#{$prefix}light);
+          }
+        }
+      }
+    }
+  }
+  .days-of-month {
+    .list-inline-item {
+      display: inline-block;
+      margin-right: 0;
+    }
+    .day {
+      border-radius: 0;
+      padding: #{map-get($spacers, 2)} #{map-get($spacers, 3)};
+      background-color: var(--#{$prefix}secondary);
+      border-color: var(--#{$prefix}secondary);
+      color: var(--#{$prefix}gray-500);
+      font-size: $font-size-lg;
+      &.day-selected{
+        background-color: var(--#{$prefix}primary);
+        border-color: var(--#{$prefix}primary);
+        color: var(--#{$prefix}white);
+      }
+
+    }
+  }
+  .filter-search{
+    input{
+      border-radius: 0;
+      border-color: var(--#{$prefix}primary);
+      font-size: $h2-font-size;
+      color: var(--#{$prefix}gray-500);
+      text-align: center;
+      &::placeholder{
+        color: rgba($dark, 0.6);
+      }
+    }
+  }
+  
+  .filter-category{
+    select{
+      border-radius: 0;
+      border-color: var(--#{$prefix}primary);
+      font-size: $h2-font-size;
+      color: var(--#{$prefix}gray-500);
+      text-align: center;
+    }
+  }
+
+  .events-list{
+    .card{
+      border: 0;
+      .card-title { font-weight: 700; }
+      .card-body { 
+        padding: 0;
+      }
+    }
+  }
+}

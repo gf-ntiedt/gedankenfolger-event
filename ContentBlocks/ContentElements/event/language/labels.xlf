@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2026-02-06T00:00:00Z">
+    <body>
+      <trans-unit id="title">
+        <source>Gedankenfolger Event</source>
+      </trans-unit>
+      <trans-unit id="only_months_with_events.label">
+        <source>Only months with events</source>
+      </trans-unit>
+      <trans-unit id="month.01">
+        <source>January</source>
+      </trans-unit>
+      <trans-unit id="month.02">
+        <source>February</source>
+      </trans-unit>
+      <trans-unit id="month.03">
+        <source>March</source>
+      </trans-unit>
+      <trans-unit id="month.04">
+        <source>April</source>
+      </trans-unit>
+      <trans-unit id="month.05">
+        <source>May</source>
+      </trans-unit>
+      <trans-unit id="month.06">
+        <source>June</source>
+      </trans-unit>
+      <trans-unit id="month.07">
+        <source>July</source>
+      </trans-unit>
+      <trans-unit id="month.08">
+        <source>August</source>
+      </trans-unit>
+      <trans-unit id="month.09">
+        <source>September</source>
+      </trans-unit>
+      <trans-unit id="month.10">
+        <source>October</source>
+      </trans-unit>
+      <trans-unit id="month.11">
+        <source>November</source>
+      </trans-unit>
+      <trans-unit id="month.12">
+        <source>December</source>
+      </trans-unit>
+      <trans-unit id="category_filter">
+        <source>Category filter</source>
+      </trans-unit>
+      <trans-unit id="layout">
+        <source>Layout</source>
+      </trans-unit>
+      <trans-unit id="date">
+        <source>Date</source>
+      </trans-unit>
+      <trans-unit id="time">
+        <source>Time</source>
+      </trans-unit>
+      <trans-unit id="location">
+        <source>Location</source>
+      </trans-unit>
+      <trans-unit id="visit_us">
+        <source>Visit us at</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

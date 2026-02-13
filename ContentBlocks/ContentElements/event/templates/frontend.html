@@ -1,0 +1,155 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+    <f:variable name="dateFormat">{f:translate(key: 'format.date', extensionName: 'gedankenfolger_event')}</f:variable>
+    <section class="{data.CType} my-5">
+        <div class="container-fluid bg-secondary">
+
+            <div class="row pt-6 pb-4">
+                <div class="col-md-22 offset-md-1">
+                    <div class="row align-items-stretch justify-content-end">
+                        <div class="col-md-6 me-auto align-items-center months-of-year" data-displayed-months="1" data-default-filtered="{f:if(condition: settings.default_filter_active, then: '1', else: '0')}">
+                            <nav class="w-100 h-100" aria-label="month-nav">
+                                <ul class="pagination pagination-sm mb-0 h-100 justify-content-between">
+                                    <li class="page-item page-item-prev">
+                                        <button type="button" class="page-link  js-month-prev" aria-label="Previous">&lt;</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="01">{f:translate(key: '{cb:languagePath()}:month.01')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="02">{f:translate(key: '{cb:languagePath()}:month.02')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="03">{f:translate(key: '{cb:languagePath()}:month.03')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="04">{f:translate(key: '{cb:languagePath()}:month.04')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="05">{f:translate(key: '{cb:languagePath()}:month.05')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="06">{f:translate(key: '{cb:languagePath()}:month.06')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="07">{f:translate(key: '{cb:languagePath()}:month.07')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="08">{f:translate(key: '{cb:languagePath()}:month.08')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="09">{f:translate(key: '{cb:languagePath()}:month.09')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="10">{f:translate(key: '{cb:languagePath()}:month.10')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="11">{f:translate(key: '{cb:languagePath()}:month.11')}</button>
+                                    </li>
+                                    <li class="page-item page-item-month">
+                                        <button type="button" class="page-link  js-month-item" data-month="12">{f:translate(key: '{cb:languagePath()}:month.12')}</button>
+                                    </li>
+                                    <li class="page-item page-item-next">
+                                        <button type="button" class="page-link  js-month-next" aria-label="Next">&gt;</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-6 filter-search">
+                            <div class="input-group">
+                                <input type="search" class="form-control js-event-search h-100" placeholder="{f:translate(key: 'search.label', extensionName: 'gedankenfolger_event')}" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 filter-category">
+                            <select class="form-select form-select-sm js-event-category-filter h-100">
+                                <option value="all"></option>
+                                <option value="fairs">{f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:category.items.fairs.label')}</option>
+                                <option value="conferences">{f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:category.items.conferences.label')}</option>
+                                <option value="webinar">{f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:category.items.webinar.label')}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row days-of-month-row pt-4 pb-5">
+                <div class="col-md-22 offset-md-1">
+                    <ul class="list-inline days-of-month d-flex flex-row justify-content-center gap-0 overflow-auto">
+                        <!-- day days-of-month: keep original day display -->
+                        <f:for each="{0: '01', 1: '02', 2: '03', 3: '04', 4: '05', 5: '06', 6: '07', 7: '08', 8: '09', 9: '10', 10: '11', 11: '12', 12: '13', 13: '14', 14: '15', 15: '16', 16: '17', 17: '18', 18: '19', 19: '20', 20: '21', 21: '22', 22: '23', 23: '24', 24: '25', 25: '26', 26: '27', 27: '28', 28: '29', 29: '30', 30: '31'}" as="day">
+                            <li class="list-inline-item">
+                                <button type="button" class="btn btn-sm btn-light day" data-day="{day}">{day}</button>
+                            </li>
+                        </f:for>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="container">
+            <div class="row events-list g-5 mt-5">
+                <f:if condition="{events}">
+                    <f:for each="{events}" as="event">
+                            <div class="col-24 col-md-12 col-lg-6 event-card" data-category="{event.data.category}" data-date-from="{event.data.date_from -> f:format.date(format:'Y-m-d\\TH:i:s')}" data-date-to="{event.data.date_to -> f:format.date(format:'Y-m-d\\TH:i:s')}">
+                            <article class="card h-100">
+                                <f:if condition="{event.asset.0}">
+                                    <f:image image="{event.asset.0}" class="card-img-top" alt="{event.asset.0.alternative}" title="{event.asset.0.title}" width="500"/>
+                                </f:if>
+                                <div class="card-body pt-5">
+                                    <h5 class="card-title">{event.data.title}</h5>
+
+                                    <div class="d-flex justify-content-start border-bottom py-1">
+                                        <div class="pe-2">
+                                            {f:translate(key: '{cb:languagePath()}:date')}:
+                                        </div>
+                                        <div class="">
+                                            {event.data.date_from -> f:format.date(pattern:'E, {dateFormat}')} &ndash; {event.data.date_to -> f:format.date(pattern:dateFormat)}
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-start border-bottom py-1">
+                                        <div class="pe-2">
+                                            {f:translate(key: '{cb:languagePath()}:time')}:
+                                        </div>
+                                        <div class="">
+                                            {event.data.date_from -> f:format.date(format:'H:i')} - {event.data.date_to -> f:format.date(format:'H:i')}
+                                        </div>
+                                    </div>
+                                    <f:if condition="{event.data.location}">
+                                        <div class="d-flex justify-content-start border-bottom py-1">
+                                            <div class="pe-2">
+                                                {f:translate(key: '{cb:languagePath()}:location')}:
+                                            </div>
+                                            <div class="">
+                                                {event.data.location}
+                                            </div>
+                                        </div>
+                                    </f:if>
+                                    
+                                    <f:if condition="{event.data.teaser}">
+                                        <p class="card-text pt-2">{event.data.teaser}</p>
+                                    </f:if>
+                                    
+                                    <f:if condition="{event.data.hall} && {event.data.stand}">
+                                        <p class="card-text">{f:translate(key: '{cb:languagePath()}:visit_us')} {f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:hall')} {event.data.hall} / {f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:stand')} {event.data.stand}</p>
+                                    </f:if>
+                                    
+                                    
+                                    <f:if condition="{event.data.description}">
+                                        {event.data.description -> f:format.html()}
+                                    </f:if>
+                                </div>
+                            </article>
+                        </div>
+                    </f:for>
+                </f:if>
+            </div>
+        </div>
+
+    </section>
+    <f:comment>Register JS via Content Blocks asset ViewHelpers (adds to page assets).</f:comment>
+    <f:asset.script identifier="content-block-js-gedankenfolger-event/event" src="{cb:assetPath()}/Frontend.js" />
+</html>

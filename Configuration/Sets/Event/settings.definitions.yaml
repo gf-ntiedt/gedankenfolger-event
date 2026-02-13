@@ -1,0 +1,23 @@
+categories:
+  GedankenfolgerEvent:
+    label: 'Gedankenfolger Event'
+
+settings:
+  GedankenfolgerEvent.bootstrapcss:
+    label: 'Load Bootstrap CSS'
+    description: 'incl. bootstap core'
+    category: GedankenfolgerEvent
+    type: bool
+    default: 0
+  GedankenfolgerEvent.bootstrapscss:
+    label: 'Load Bootstrap CSS'
+    description: 'incl. bootstap core. EXT: ws_scss is required for this option to work.'
+    category: GedankenfolgerEvent
+    type: bool
+    default: 0
+  GedankenfolgerEvent.gfsitepackagescss:
+    label: 'Load SCSS with Gedankenfolger Sitepackage'
+    description: 'EXT: ws_scss is required for this option to work.'
+    category: GedankenfolgerEvent
+    type: bool
+    default: 0

@@ -1,0 +1,5 @@
+/* Minimal CSS for timeline and event card spacing adapted to Bootstrap 5 */
+.gedankenfolger_event .timeline { list-style: none; margin:0; padding:0; }
+.gedankenfolger_event .timeline-day { min-width:38px; }
+.gedankenfolger_event .event-card { transition: transform .15s ease-in-out; }
+.gedankenfolger_event .event-card:hover { transform: translateY(-6px); }

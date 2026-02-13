@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-02-06T00:00:00Z">
+    <body>
+      <trans-unit id="title">
+        <target>Gedankenfolger Event</target>
+      </trans-unit>
+      <trans-unit id="only_months_with_events.label">
+        <target>Nur Monate mit Veranstaltungen</target>
+      </trans-unit>
+      <trans-unit id="month.01">
+        <target>Januar</target>
+      </trans-unit>
+      <trans-unit id="month.02">
+        <target>Februar</target>
+      </trans-unit>
+      <trans-unit id="month.03">
+        <target>März</target>
+      </trans-unit>
+      <trans-unit id="month.04">
+        <target>April</target>
+      </trans-unit>
+      <trans-unit id="month.05">
+        <target>Mai</target>
+      </trans-unit>
+      <trans-unit id="month.06">
+        <target>Juni</target>
+      </trans-unit>
+      <trans-unit id="month.07">
+        <target>Juli</target>
+      </trans-unit>
+      <trans-unit id="month.08">
+        <target>August</target>
+      </trans-unit>
+      <trans-unit id="month.09">
+        <target>September</target>
+      </trans-unit>
+      <trans-unit id="month.10">
+        <target>Oktober</target>
+      </trans-unit>
+      <trans-unit id="month.11">
+        <target>November</target>
+      </trans-unit>
+      <trans-unit id="month.12">
+        <target>Dezember</target>
+      </trans-unit>
+      <trans-unit id="category_filter">
+        <target>Kategorie Filter</target>
+      </trans-unit>
+      <trans-unit id="layout">
+        <target>Layout</target>
+      </trans-unit>
+      <trans-unit id="date">
+        <target>Datum</target>
+      </trans-unit>
+      <trans-unit id="time">
+        <target>Zeit</target>
+      </trans-unit>
+      <trans-unit id="location">
+        <target>Ort</target>
+      </trans-unit>
+      <trans-unit id="visit_us">
+        <target>Besuchen Sie uns in</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

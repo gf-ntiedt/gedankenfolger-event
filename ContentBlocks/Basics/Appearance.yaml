@@ -1,0 +1,20 @@
+# To be used within ContentElements
+identifier: gedankenfolger/Appearance
+fields:
+  -
+    identifier: appearance_tab
+    type: Tab
+    label: LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance
+  -
+    identifier: frames_palette
+    type: Palette
+    label: LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames
+    fields:
+      -
+        type: Linebreak
+      -
+        identifier: space_before_class
+        useExistingField: true
+      -
+        identifier: space_after_class
+        useExistingField: true

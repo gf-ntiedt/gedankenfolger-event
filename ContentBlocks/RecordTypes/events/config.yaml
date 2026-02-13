@@ -1,0 +1,62 @@
+name: gedankenfolger/events
+table: tx_gedankenfolger_event
+prefixFields: false
+labelField: title
+security:
+  ignorePageTypeRestriction: true
+fields:
+  -
+    identifier: title
+    type: Text
+    label: Title
+  -
+    identifier: date_from
+    type: DateTime
+    label: Date from
+  -
+    identifier: date_to
+    type: DateTime
+    label: Date to
+  -
+    identifier: location
+    type: Text
+    label: Location
+  -
+    identifier: hall
+    type: Text
+    label: Hall
+    displayCond: 'FIELD:category:=:fairs'
+  -
+    identifier: stand
+    type: Text
+    label: Stand
+    displayCond: 'FIELD:category:=:fairs'
+  -
+    identifier: image
+    type: File
+    label: Image
+    appearance:
+      - allowedFileExtensions: "jpg,jpeg,png,webp"
+  -
+    identifier: teaser
+    type: Textarea
+    label: Teaser
+  -
+    identifier: description
+    type: Textarea
+    label: Description
+    enableRichtext: true
+    richtextConfiguration: full
+  -
+    identifier: category
+    type: Select
+    label: Category
+    renderType: selectSingle
+    onChange: reload
+    items:
+      - label: Fairs
+        value: fairs
+      - label: Conferences
+        value: conferences
+      - label: Webinar
+        value: webinar

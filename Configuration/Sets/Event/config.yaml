@@ -1,0 +1,4 @@
+name: gedankenfolger/gedankenfolger-event
+label: 'Gedankenfolger Event'
+dependencies:
+  - typo3/fluid-styled-content

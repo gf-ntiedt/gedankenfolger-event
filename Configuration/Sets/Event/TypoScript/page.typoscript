@@ -1,0 +1,22 @@
+##############
+#### PAGE ####
+##############
+
+[{$GedankenfolgerEvent.bootstrapcss} == 1]
+    page {
+        includeCSS {
+            event = EXT:gedankenfolger_event/Resources/Public/Css/bootstrap_events.css
+        }
+    }
+[END]
+
+[{$GedankenfolgerEvent.bootstrapscss} == 1]
+    page {
+        includeCSS >
+        includeCSS {
+            event = EXT:gedankenfolger_event/Resources/Public/Scss/bootstrap_events.scss
+            event.outputfile = EXT:gedankenfolger_event/Resources/Public/Css/bootstrap_events.css
+            event.sourceMap = true
+        }
+    }
+[END]

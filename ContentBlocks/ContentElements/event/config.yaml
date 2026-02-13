@@ -1,0 +1,53 @@
+name: gedankenfolger/event
+typeName: gedankenfolger_event
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: TYPO3/Header
+    type: Basic
+    useExistingField: true
+  - identifier: events_sys_folder
+    type: Relation
+    label: Events folder
+    allowed: 'pages'
+    minitems: 1
+    maxitems: 1
+  -
+    identifier: category_filter
+    type: Select
+    label: Category filter
+    renderType: selectSingle
+    items:
+      - label: All
+        value: all
+      - label: Fairs
+        value: fairs
+      - label: Conferences
+        value: conferences
+      - label: Webinar
+        value: webinar
+  -
+    identifier: gedankenfolger/Appearance
+    type: Basic
+  -
+    identifier: layout
+    label: Layout
+    type: Select
+    renderType: selectSingle
+    default: grid-3
+    items:
+      - label: Grid (3 columns)
+        value: grid-3
+      - label: Grid (2 columns)
+        value: grid-2
+      - label: List
+        value: list
+  -
+    identifier: only_months_with_events
+    type: Checkbox
+    renderType: checkboxToggle
+    label: Only months with events
+    default: 0
+

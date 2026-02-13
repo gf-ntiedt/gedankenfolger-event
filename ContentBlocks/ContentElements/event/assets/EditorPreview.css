@@ -1,0 +1,4 @@
+/* Editor preview CSS for event block */
+.gedankenfolger_event { font-family: Arial, Helvetica, sans-serif; }
+.gedankenfolger_event .card { border: 1px solid #eee; }
+.gedankenfolger_event .day { padding: .25rem .5rem; }

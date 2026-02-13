@@ -1,0 +1,23 @@
+{
+    "name": "gedankenfolger/gedankenfolger-event",
+    "description": "Events",
+    "version": "13.0.0",
+    "type": "typo3-cms-extension",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "friendsoftypo3/content-blocks": "^1.3",
+        "wapplersystems/ws-scss": "^13.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gedankenfolger\\GedankenfolgerEvent\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "gedankenfolger_event"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-02-06T00:00:00Z">
+    <body>
+      <trans-unit id="title">
+        <target>Gedankenfolger Event</target>
+      </trans-unit>
+      <trans-unit id="date_from">
+        <target>Datum von</target>
+      </trans-unit>
+      <trans-unit id="date_to">
+        <target>Datum bis</target>
+      </trans-unit>
+      <trans-unit id="location">
+        <target>Ort</target>
+      </trans-unit>
+      <trans-unit id="hall">
+        <target>Halle</target>
+      </trans-unit>
+      <trans-unit id="stand">
+        <target>Stand</target>
+      </trans-unit>
+      <trans-unit id="teaser">
+        <target>Auszug</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <target>Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="category">
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="category.items.fairs.label">
+        <target>Messen</target>
+      </trans-unit>
+      <trans-unit id="category.items.conferences.label">
+        <target>Konferenzen</target>
+      </trans-unit>
+      <trans-unit id="category.items.webinar.label">
+        <target>Webinare</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
