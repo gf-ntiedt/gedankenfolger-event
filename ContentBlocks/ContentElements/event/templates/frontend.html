@@ -144,6 +144,12 @@
                                     <f:if condition="{event.data.description}">
                                         {event.data.description -> f:format.html()}
                                     </f:if>
+
+                                    <f:if condition="{data.gedankenfolger_event_ics_download}">
+                                        <a href="?eID=event_ics&uid={event.data.uid}" class="btn btn-sm btn-outline-secondary mt-3">
+                                            {f:translate(key: '{cb:languagePath()}:ics.download')}
+                                        </a>
+                                    </f:if>
                                 </div>
                             </article>
                         </div>

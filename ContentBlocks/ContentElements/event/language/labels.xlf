@@ -68,6 +68,12 @@
       <trans-unit id="pagination.next">
         <source>Next</source>
       </trans-unit>
+      <trans-unit id="ics_download.label">
+        <source>Enable ICS download</source>
+      </trans-unit>
+      <trans-unit id="ics.download">
+        <source>Add to calendar</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

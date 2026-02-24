@@ -50,4 +50,10 @@ fields:
     renderType: checkboxToggle
     label: Only months with events
     default: 0
+  -
+    identifier: ics_download
+    type: Checkbox
+    renderType: checkboxToggle
+    label: Enable ICS download
+    default: 0
 
