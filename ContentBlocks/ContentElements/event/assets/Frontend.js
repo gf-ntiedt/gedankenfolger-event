@@ -243,6 +243,66 @@
             applyFilters();
           });
         });
+
+        // days-of-month scroll buttons + drag-to-scroll (mouse & touch)
+        var daysList = container.querySelector('.days-of-month');
+        var daysPrev = container.querySelector('.js-days-prev');
+        var daysNext = container.querySelector('.js-days-next');
+        if (daysList && daysPrev && daysNext) {
+          var scrollStep = daysList.querySelector('.day') ? daysList.querySelector('.day').offsetWidth * 3 : 90;
+          daysPrev.addEventListener('click', function () {
+            daysList.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+          });
+          daysNext.addEventListener('click', function () {
+            daysList.scrollBy({ left: scrollStep, behavior: 'smooth' });
+          });
+
+          // drag-to-scroll: mouse
+          var isDragging = false;
+          var dragStartX = 0;
+          var dragScrollLeft = 0;
+          var dragMoved = false;
+
+          daysList.addEventListener('mousedown', function (e) {
+            isDragging = true;
+            dragMoved = false;
+            dragStartX = e.pageX - daysList.offsetLeft;
+            dragScrollLeft = daysList.scrollLeft;
+            daysList.style.cursor = 'grabbing';
+            daysList.style.userSelect = 'none';
+          });
+          document.addEventListener('mouseup', function () {
+            if (!isDragging) return;
+            isDragging = false;
+            daysList.style.cursor = 'grab';
+            daysList.style.userSelect = '';
+          });
+          daysList.addEventListener('mousemove', function (e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            var x = e.pageX - daysList.offsetLeft;
+            var delta = x - dragStartX;
+            if (Math.abs(delta) > 4) dragMoved = true;
+            daysList.scrollLeft = dragScrollLeft - delta;
+          });
+          // prevent click on day buttons after drag
+          daysList.addEventListener('click', function (e) {
+            if (dragMoved) { e.stopPropagation(); e.preventDefault(); dragMoved = false; }
+          }, true);
+          daysList.style.cursor = 'grab';
+
+          // drag-to-scroll: touch
+          var touchStartX = 0;
+          var touchScrollLeft = 0;
+          daysList.addEventListener('touchstart', function (e) {
+            touchStartX = e.touches[0].pageX;
+            touchScrollLeft = daysList.scrollLeft;
+          }, { passive: true });
+          daysList.addEventListener('touchmove', function (e) {
+            var delta = touchStartX - e.touches[0].pageX;
+            daysList.scrollLeft = touchScrollLeft + delta;
+          }, { passive: true });
+        }
       })(containers[ci]);
     }
   });
