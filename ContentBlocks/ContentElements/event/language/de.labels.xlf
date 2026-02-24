@@ -62,6 +62,12 @@
       <trans-unit id="visit_us">
         <target>Besuchen Sie uns in</target>
       </trans-unit>
+      <trans-unit id="pagination.prev">
+        <target>Zurück</target>
+      </trans-unit>
+      <trans-unit id="pagination.next">
+        <target>Weiter</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -62,6 +62,12 @@
       <trans-unit id="visit_us">
         <source>Visit us at</source>
       </trans-unit>
+      <trans-unit id="pagination.prev">
+        <source>Previous</source>
+      </trans-unit>
+      <trans-unit id="pagination.next">
+        <source>Next</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
