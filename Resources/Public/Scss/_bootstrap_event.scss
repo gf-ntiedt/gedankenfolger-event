@@ -26,18 +26,26 @@
       }
     }
   }
-  .days-of-month {
-    .list-inline-item {
-      display: inline-block;
-      margin-right: 0;
-    }
-    .day {
+  .days-of-month-wrapper {
+    button{
       border-radius: 0;
       padding: #{map-get($spacers, 2)} #{map-get($spacers, 3)};
       background-color: var(--#{$prefix}secondary);
       border-color: var(--#{$prefix}secondary);
       color: var(--#{$prefix}gray-500);
       font-size: $font-size-lg;
+    }
+    .list-inline-item {
+      display: inline-block;
+      margin-right: 0;
+    }
+    .js-days-prev,
+    .js-days-next{
+        padding: 0;
+        color: var(--#{$prefix}light);
+        background-color: none;
+    }
+    .day {
       &.day-selected{
         background-color: var(--#{$prefix}primary);
         border-color: var(--#{$prefix}primary);
