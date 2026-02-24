@@ -1,5 +1,5 @@
 # To be used within ContentElements
-identifier: gedankenfolger/Appearance
+identifier: GedankenfolgerEvent/Appearance
 fields:
   -
     identifier: appearance_tab

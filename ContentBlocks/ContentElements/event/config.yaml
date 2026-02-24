@@ -29,7 +29,7 @@ fields:
       - label: Webinar
         value: webinar
   -
-    identifier: gedankenfolger/Appearance
+    identifier: GedankenfolgerEvent/Appearance
     type: Basic
   -
     identifier: layout
