@@ -42,8 +42,6 @@
     .js-days-prev,
     .js-days-next{
         padding: 0;
-        color: var(--#{$prefix}light);
-        background-color: none;
     }
     .day {
       &.day-selected{
