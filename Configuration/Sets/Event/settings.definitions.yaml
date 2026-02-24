@@ -10,7 +10,7 @@ settings:
     type: bool
     default: 0
   GedankenfolgerEvent.bootstrapscss:
-    label: 'Load Bootstrap CSS'
+    label: 'Load Bootstrap SCSS'
     description: 'incl. bootstap core. EXT: ws_scss is required for this option to work.'
     category: GedankenfolgerEvent
     type: bool
