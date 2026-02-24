@@ -3,7 +3,7 @@
     xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
     data-namespace-typo3-fluid="true"
 >
-    <f:variable name="dateFormat">{f:translate(key: 'format.date', extensionName: 'gedankenfolger_event')}</f:variable>
+    <f:variable name="dateFormat"><f:translate key="{cb:languagePath(name: 'gedankenfolger/events')}:format.date" /></f:variable>
     <section class="{data.CType} my-5">
         <div class="container-fluid bg-secondary">
 

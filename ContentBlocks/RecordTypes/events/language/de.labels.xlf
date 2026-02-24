@@ -38,6 +38,9 @@
       <trans-unit id="category.items.webinar.label">
         <target>Webinare</target>
       </trans-unit>
+      <trans-unit id="format.date">
+        <target>dd. MM. yy</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
