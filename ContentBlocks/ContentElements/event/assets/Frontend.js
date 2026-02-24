@@ -193,18 +193,16 @@
         renderWindow();
 
         if (monthPrev) monthPrev.addEventListener('click', function () {
-          // single-step left
-          var nextIdx = (startIndex + 12 - 1) % 12;
-          startIndex = nextIdx;
+          startIndex = (startIndex + 12 - 1) % 12;
+          var center = (startIndex + h) % 12;
+          if (monthItems[center]) selectedMonth = monthItems[center].dataset.month;
           renderWindow();
-          applyFilters();
         });
         if (monthNext) monthNext.addEventListener('click', function () {
-          // single-step right
-          var nextIdx = (startIndex + 1) % 12;
-          startIndex = nextIdx;
+          startIndex = (startIndex + 1) % 12;
+          var center = (startIndex + h) % 12;
+          if (monthItems[center]) selectedMonth = monthItems[center].dataset.month;
           renderWindow();
-          applyFilters();
         });
 
         for (var ii = 0; ii < monthItems.length; ii++) {
