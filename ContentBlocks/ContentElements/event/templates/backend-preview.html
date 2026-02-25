@@ -1,7 +1,88 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-    <f:asset.css identifier="content-block-gedankenfolger-event/event-be" href="{cb:assetPath()}/EditorPreview.css" />
-    <div style="padding:12px; border:1px solid #eee; background:#fafafa; font-family:Arial,Helvetica,sans-serif;">
-        <strong>Events block</strong>
-        <div style="margin-top:6px; color:#666;">Displays a days-of-month timeline and a grid of event cards. Uses Bootstrap 5 layout (preview).</div>
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+  <f:layout name="Preview" />
+
+  <f:section name="Header">
+    <f:if condition="{data.header}">
+      <be:link.editRecord uid="{data.uid}" table="tt_content" fields="header">
+        {data.header}
+      </be:link.editRecord>
+    </f:if>
+  </f:section>
+
+  <f:section name="Content">
+    <div id="c{data.uid}" class="{data.CType}">
+      <ul class="list-group">
+
+        <f:if condition="{data.events_sys_folder}">
+          <li class="list-group-item d-flex justify-content-between">
+            <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_events_sys_folder">
+              <f:translate key="{cb:languagePath()}:events_sys_folder.label" />
+            </be:link.editRecord>
+            <div class="list-group">
+              <f:for each="{data.events_sys_folder}" as="folder">
+                <f:be.link route="web_list" parameters="{id: folder.uid}" title="{folder.title}" class="list-group-item list-group-item-action">
+                  {folder.title}
+                </f:be.link>
+              </f:for>
+            </div>
+          </li>
+        </f:if>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_category_filter">
+            <f:translate key="{cb:languagePath()}:category_filter.label" />
+          </be:link.editRecord>
+          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_category_filter">
+            <span>{data.category_filter}</span>
+          </be:link.editRecord>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_layout">
+            <f:translate key="{cb:languagePath()}:layout.label" />
+          </be:link.editRecord>
+          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_layout">
+            <span>{data.layout}</span>
+          </be:link.editRecord>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_only_months_with_events">
+            <f:translate key="{cb:languagePath()}:only_months_with_events.label" />
+          </be:link.editRecord>
+          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_only_months_with_events">
+            <f:if condition="{data.only_months_with_events}">
+              <f:then><core:icon identifier="actions-check-circle" size="small" /></f:then>
+              <f:else><core:icon identifier="actions-circle" size="small" /></f:else>
+            </f:if>
+          </be:link.editRecord>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_ics_download">
+            <f:translate key="{cb:languagePath()}:ics_download.label" />
+          </be:link.editRecord>
+          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_ics_download">
+            <f:if condition="{data.ics_download}">
+              <f:then><core:icon identifier="actions-check-circle" size="small" /></f:then>
+              <f:else><core:icon identifier="actions-circle" size="small" /></f:else>
+            </f:if>
+          </be:link.editRecord>
+        </li>
+
+      </ul>
     </div>
+  </f:section>
+
+  <f:section name="Footer">
+    <div class="d-flex justify-content-between">
+      <be:link.editRecord uid="{data.uid}" table="tt_content">UID: {data.uid}</be:link.editRecord>
+      <be:link.editRecord uid="{data.uid}" table="tt_content">PID: {data.pid}</be:link.editRecord>
+    </div>
+  </f:section>
 </html>
