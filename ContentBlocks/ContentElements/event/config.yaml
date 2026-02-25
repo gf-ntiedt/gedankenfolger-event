@@ -38,12 +38,14 @@ fields:
     renderType: selectSingle
     default: grid-3
     items:
-      - label: Grid (3 columns)
-        value: grid-3
-      - label: Grid (2 columns)
-        value: grid-2
       - label: List
-        value: list
+        value: "col-24"
+      - label: Grid (2 columns)
+        value: "col-24 col-md-12"
+      - label: Grid (3 columns)
+        value: "col-24 col-md-12 col-lg-8"
+      - label: Grid (4 columns)
+        value: "col-24 col-md-12 col-lg-6"
   -
     identifier: ics_download
     type: Checkbox

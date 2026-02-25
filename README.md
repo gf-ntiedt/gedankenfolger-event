@@ -45,7 +45,7 @@
         Event content element: select events from a storage folder with category filtering
     </li>
     <li>
-        Multiple layout options: Grid (3-column), Grid (2-column), and List view
+        Multiple layout options: List, Grid (2-column), Grid (3-column), and Grid (4-column)
     </li>
     <li>
         Optional ICS download ("Add to calendar") per event
@@ -109,7 +109,7 @@
 <ul>
   <li><strong>Events folder</strong>: Select the sysfolder containing your event records.</li>
   <li><strong>Category filter</strong>: Show all events or filter by specific category (Fairs, Conferences, Webinar).</li>
-  <li><strong>Layout</strong>: Choose between Grid (3 columns), Grid (2 columns), or List view.</li>
+  <li><strong>Layout</strong>: Choose between List, Grid (2 columns), Grid (3 columns), or Grid (4 columns).</li>
   <li><strong>ICS download</strong>: When enabled, shows an "Add to calendar" link on each event card.</li>
 </ul>
 

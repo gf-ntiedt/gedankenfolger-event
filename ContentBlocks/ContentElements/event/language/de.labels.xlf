@@ -35,6 +35,9 @@
       <trans-unit id="layout.items.list.label">
         <target>Liste</target>
       </trans-unit>
+      <trans-unit id="layout.items.grid-4.label">
+        <target>Raster (4 Spalten)</target>
+      </trans-unit>
       <trans-unit id="ics_download.label">
         <target>ICS-Download aktivieren</target>
       </trans-unit>
