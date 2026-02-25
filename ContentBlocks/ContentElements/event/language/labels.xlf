@@ -35,9 +35,6 @@
       <trans-unit id="layout.items.list.label">
         <source>List</source>
       </trans-unit>
-      <trans-unit id="only_months_with_events.label">
-        <source>Only months with events</source>
-      </trans-unit>
       <trans-unit id="ics_download.label">
         <source>Enable ICS download</source>
       </trans-unit>

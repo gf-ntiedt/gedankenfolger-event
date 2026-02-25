@@ -45,12 +45,6 @@ fields:
       - label: List
         value: list
   -
-    identifier: only_months_with_events
-    type: Checkbox
-    renderType: checkboxToggle
-    label: Only months with events
-    default: 0
-  -
     identifier: ics_download
     type: Checkbox
     renderType: checkboxToggle

@@ -52,18 +52,6 @@
         </li>
 
         <li class="list-group-item d-flex justify-content-between">
-          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_only_months_with_events">
-            <f:translate key="{cb:languagePath()}:only_months_with_events.label" />
-          </be:link.editRecord>
-          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_only_months_with_events">
-            <f:if condition="{data.only_months_with_events}">
-              <f:then><core:icon identifier="actions-check-circle" size="small" /></f:then>
-              <f:else><core:icon identifier="actions-circle" size="small" /></f:else>
-            </f:if>
-          </be:link.editRecord>
-        </li>
-
-        <li class="list-group-item d-flex justify-content-between">
           <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_ics_download">
             <f:translate key="{cb:languagePath()}:ics_download.label" />
           </be:link.editRecord>
