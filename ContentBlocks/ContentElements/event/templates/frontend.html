@@ -92,12 +92,27 @@
             </div>
         </div>
 
+        <f:switch expression="{data.layout}">
+            <f:case value="list">
+                <f:variable name="layoutClass" value="col-24" />
+            </f:case>
+            <f:case value="grid-2">
+                <f:variable name="layoutClass" value="col-24 col-md-12" />
+            </f:case>
+            <f:case value="grid-3">
+                <f:variable name="layoutClass" value="col-24 col-md-12 col-lg-8" />
+            </f:case>
+            <f:case value="grid-4">
+                <f:variable name="layoutClass" value="col-24 col-md-12 col-lg-6" />
+            </f:case>
+        </f:switch>
+
     
         <div class="container">
             <div class="row events-list g-5 mt-5">
                 <f:if condition="{events}">
                     <f:for each="{events}" as="event">
-                            <div class="{data.layout} event-card" data-category="{event.data.category}" data-date-from="{event.data.date_from -> f:format.date(format:'Y-m-d\\TH:i:s')}" data-date-to="{event.data.date_to -> f:format.date(format:'Y-m-d\\TH:i:s')}">
+                            <div class="{layoutClass} event-card" data-category="{event.data.category}" data-date-from="{event.data.date_from -> f:format.date(format:'Y-m-d\\TH:i:s')}" data-date-to="{event.data.date_to -> f:format.date(format:'Y-m-d\\TH:i:s')}">
                             <article class="card h-100">
                                 <f:if condition="{event.asset.0}">
                                     <f:image image="{event.asset.0}" class="card-img-top img-fluid" alt="{event.asset.0.alternative}" title="{event.asset.0.title}" width="500"/>

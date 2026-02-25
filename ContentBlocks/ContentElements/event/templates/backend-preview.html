@@ -47,21 +47,23 @@
             <f:translate key="{cb:languagePath()}:layout.label" />
           </be:link.editRecord>
           <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_layout">
-            <span>{data.layout}</span>
+            <span><f:translate key="{cb:languagePath()}:layout.items.{data.layout}.label" /></span>
           </be:link.editRecord>
         </li>
 
-        <li class="list-group-item d-flex justify-content-between">
-          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_ics_download">
-            <f:translate key="{cb:languagePath()}:ics_download.label" />
-          </be:link.editRecord>
-          <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_ics_download">
-            <f:if condition="{data.ics_download}">
-              <f:then><core:icon identifier="actions-check-circle" size="small" /></f:then>
-              <f:else><core:icon identifier="actions-circle" size="small" /></f:else>
-            </f:if>
-          </be:link.editRecord>
-        </li>
+        <f:if condition="{data.ics_download}">
+          <li class="list-group-item d-flex justify-content-between">
+            <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_ics_download">
+              <f:translate key="{cb:languagePath()}:ics_download.label" />
+            </be:link.editRecord>
+            <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_ics_download">
+              <f:if condition="{data.ics_download}">
+                <f:then><core:icon identifier="actions-check-circle" size="small" /></f:then>
+                <f:else><core:icon identifier="actions-circle" size="small" /></f:else>
+              </f:if>
+            </be:link.editRecord>
+          </li>
+        </f:if>
 
       </ul>
     </div>

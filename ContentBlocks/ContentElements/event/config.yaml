@@ -39,13 +39,13 @@ fields:
     default: grid-3
     items:
       - label: List
-        value: "col-24"
+        value: list
       - label: Grid (2 columns)
-        value: "col-24 col-md-12"
+        value: grid-2
       - label: Grid (3 columns)
-        value: "col-24 col-md-12 col-lg-8"
+        value: grid-3
       - label: Grid (4 columns)
-        value: "col-24 col-md-12 col-lg-6"
+        value: grid-4
   -
     identifier: ics_download
     type: Checkbox

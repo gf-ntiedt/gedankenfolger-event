@@ -26,14 +26,14 @@
       <trans-unit id="layout.label">
         <source>Layout</source>
       </trans-unit>
-      <trans-unit id="layout.items.grid-3.label">
-        <source>Grid (3 columns)</source>
+      <trans-unit id="layout.items.list.label">
+        <source>List</source>
       </trans-unit>
       <trans-unit id="layout.items.grid-2.label">
         <source>Grid (2 columns)</source>
       </trans-unit>
-      <trans-unit id="layout.items.list.label">
-        <source>List</source>
+      <trans-unit id="layout.items.grid-3.label">
+        <source>Grid (3 columns)</source>
       </trans-unit>
       <trans-unit id="layout.items.grid-4.label">
         <source>Grid (4 columns)</source>
