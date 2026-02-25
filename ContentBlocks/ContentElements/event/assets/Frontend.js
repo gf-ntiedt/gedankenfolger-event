@@ -191,6 +191,14 @@
         }
 
         renderWindow();
+        // center today's day on initial load
+        setTimeout(function () {
+          for (var ti = 0; ti < dayButtons.length; ti++) {
+            var d = dayButtons[ti].dataset.day || dayButtons[ti].getAttribute('data-day') || dayButtons[ti].textContent.trim();
+            var dStr = (parseInt(d, 10) < 10) ? '0' + parseInt(d, 10) : '' + parseInt(d, 10);
+            if (dStr === todayDay) { dayButtons[ti].scrollIntoView({ behavior: 'instant', inline: 'center', block: 'nearest' }); break; }
+          }
+        }, 0);
 
         if (monthPrev) monthPrev.addEventListener('click', function () {
           startIndex = (startIndex + 12 - 1) % 12;
@@ -239,6 +247,7 @@
             dayButtons.forEach(function (b) { b.classList.remove('day-selected'); });
             if (selectedDay) btn.classList.add('day-selected');
             applyFilters();
+            if (selectedDay) btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
           });
         });
 
@@ -247,7 +256,7 @@
         var daysPrev = container.querySelector('.js-days-prev');
         var daysNext = container.querySelector('.js-days-next');
         if (daysList && daysPrev && daysNext) {
-          var scrollStep = daysList.querySelector('.day') ? daysList.querySelector('.day').offsetWidth * 3 : 90;
+          var scrollStep = daysList.querySelector('.day') ? daysList.querySelector('.day').offsetWidth : 30;
           daysPrev.addEventListener('click', function () {
             daysList.scrollBy({ left: -scrollStep, behavior: 'smooth' });
           });

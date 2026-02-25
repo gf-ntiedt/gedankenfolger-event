@@ -35,9 +35,13 @@
       color: var(--#{$prefix}gray-500);
       font-size: $font-size-lg;
     }
+    .days-of-month {
+      scroll-snap-type: x mandatory;
+    }
     .list-inline-item {
       display: inline-block;
       margin-right: 0;
+      scroll-snap-align: center;
     }
     .js-days-prev,
     .js-days-next{
