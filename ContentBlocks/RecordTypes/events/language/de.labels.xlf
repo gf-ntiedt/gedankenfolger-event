@@ -8,6 +8,9 @@
       <trans-unit id="title.label">
         <target>Titel</target>
       </trans-unit>
+      <trans-unit id="palettes.palette_date.label">
+        <target></target>
+      </trans-unit>
       <trans-unit id="date_from.label">
         <target>Datum von</target>
       </trans-unit>
@@ -16,6 +19,9 @@
       </trans-unit>
       <trans-unit id="location.label">
         <target>Ort</target>
+      </trans-unit>
+      <trans-unit id="tab.palette_hall_stand.label">
+        <target></target>
       </trans-unit>
       <trans-unit id="hall.label">
         <target>Halle</target>
@@ -31,6 +37,9 @@
       </trans-unit>
       <trans-unit id="description.label">
         <target>Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="palettes.tab_category.label">
+        <target>Kategorie</target>
       </trans-unit>
       <trans-unit id="category.label">
         <target>Kategorie</target>

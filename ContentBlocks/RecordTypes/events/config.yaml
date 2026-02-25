@@ -10,27 +10,37 @@ fields:
     type: Text
     label: Title
   -
-    identifier: date_from
-    type: DateTime
-    label: Date from
-  -
-    identifier: date_to
-    type: DateTime
-    label: Date to
+    identifier: palette_date
+    type: Palette
+    label: ""
+    fields:
+      -
+        identifier: date_from
+        type: DateTime
+        label: Date from
+      -
+        identifier: date_to
+        type: DateTime
+        label: Date to
   -
     identifier: location
     type: Text
     label: Location
   -
-    identifier: hall
-    type: Text
-    label: Hall
-    displayCond: 'FIELD:category:=:fairs'
-  -
-    identifier: stand
-    type: Text
-    label: Stand
-    displayCond: 'FIELD:category:=:fairs'
+    identifier: palette_hall_stand
+    type: Palette
+    label: ""
+    fields:
+      -
+        identifier: hall
+        type: Text
+        label: Hall
+        displayCond: 'FIELD:category:=:fairs'
+      -
+        identifier: stand
+        type: Text
+        label: Stand
+        displayCond: 'FIELD:category:=:fairs'
   -
     identifier: image
     type: File
@@ -47,6 +57,10 @@ fields:
     label: Description
     enableRichtext: true
     richtextConfiguration: full
+  -
+    identifier: tab_category
+    type: Tab
+    label: Category
   -
     identifier: category
     type: Select
