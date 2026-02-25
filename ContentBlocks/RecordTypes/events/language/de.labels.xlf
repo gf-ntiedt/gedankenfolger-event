@@ -5,28 +5,34 @@
       <trans-unit id="title">
         <target>Gedankenfolger Event</target>
       </trans-unit>
-      <trans-unit id="date_from">
+      <trans-unit id="title.label">
+        <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="date_from.label">
         <target>Datum von</target>
       </trans-unit>
-      <trans-unit id="date_to">
+      <trans-unit id="date_to.label">
         <target>Datum bis</target>
       </trans-unit>
-      <trans-unit id="location">
+      <trans-unit id="location.label">
         <target>Ort</target>
       </trans-unit>
-      <trans-unit id="hall">
+      <trans-unit id="hall.label">
         <target>Halle</target>
       </trans-unit>
-      <trans-unit id="stand">
+      <trans-unit id="stand.label">
         <target>Stand</target>
       </trans-unit>
-      <trans-unit id="teaser">
+      <trans-unit id="image.label">
+        <target>Bild</target>
+      </trans-unit>
+      <trans-unit id="teaser.label">
         <target>Auszug</target>
       </trans-unit>
-      <trans-unit id="description">
+      <trans-unit id="description.label">
         <target>Beschreibung</target>
       </trans-unit>
-      <trans-unit id="category">
+      <trans-unit id="category.label">
         <target>Kategorie</target>
       </trans-unit>
       <trans-unit id="category.items.fairs.label">

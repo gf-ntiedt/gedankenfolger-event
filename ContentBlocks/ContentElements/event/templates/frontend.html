@@ -60,7 +60,7 @@
                         </div>
                         <div class="col-md-6 filter-search">
                             <div class="input-group">
-                                <input type="search" class="form-control js-event-search h-100" placeholder="{f:translate(key: 'search.label', extensionName: 'gedankenfolger_event')}" />
+                                <input type="search" class="form-control js-event-search h-100" placeholder="{f:translate(key: '{cb:languagePath()}:search.label')}" />
                             </div>
                         </div>
                         <div class="col-md-6 filter-category">
@@ -137,7 +137,7 @@
                                     </f:if>
                                     
                                     <f:if condition="{event.data.hall} && {event.data.stand}">
-                                        <p class="card-text">{f:translate(key: '{cb:languagePath()}:visit_us')} {f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:hall')} {event.data.hall} / {f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:stand')} {event.data.stand}</p>
+                                        <p class="card-text">{f:translate(key: '{cb:languagePath()}:visit_us')} {f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:hall.label')} {event.data.hall} / {f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:stand.label')} {event.data.stand}</p>
                                     </f:if>
                                     
                                     

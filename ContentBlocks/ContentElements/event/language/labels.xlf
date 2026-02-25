@@ -5,8 +5,41 @@
       <trans-unit id="title">
         <source>Gedankenfolger Event</source>
       </trans-unit>
+      <trans-unit id="events_sys_folder.label">
+        <source>Events folder</source>
+      </trans-unit>
+      <trans-unit id="category_filter.label">
+        <source>Category filter</source>
+      </trans-unit>
+      <trans-unit id="category_filter.items.all.label">
+        <source>All</source>
+      </trans-unit>
+      <trans-unit id="category_filter.items.fairs.label">
+        <source>Fairs</source>
+      </trans-unit>
+      <trans-unit id="category_filter.items.conferences.label">
+        <source>Conferences</source>
+      </trans-unit>
+      <trans-unit id="category_filter.items.webinar.label">
+        <source>Webinar</source>
+      </trans-unit>
+      <trans-unit id="layout.label">
+        <source>Layout</source>
+      </trans-unit>
+      <trans-unit id="layout.items.grid-3.label">
+        <source>Grid (3 columns)</source>
+      </trans-unit>
+      <trans-unit id="layout.items.grid-2.label">
+        <source>Grid (2 columns)</source>
+      </trans-unit>
+      <trans-unit id="layout.items.list.label">
+        <source>List</source>
+      </trans-unit>
       <trans-unit id="only_months_with_events.label">
         <source>Only months with events</source>
+      </trans-unit>
+      <trans-unit id="ics_download.label">
+        <source>Enable ICS download</source>
       </trans-unit>
       <trans-unit id="month.01">
         <source>January</source>
@@ -44,11 +77,8 @@
       <trans-unit id="month.12">
         <source>December</source>
       </trans-unit>
-      <trans-unit id="category_filter">
-        <source>Category filter</source>
-      </trans-unit>
-      <trans-unit id="layout">
-        <source>Layout</source>
+      <trans-unit id="search.label">
+        <source>Search</source>
       </trans-unit>
       <trans-unit id="date">
         <source>Date</source>
@@ -62,17 +92,14 @@
       <trans-unit id="visit_us">
         <source>Visit us at</source>
       </trans-unit>
+      <trans-unit id="ics.download">
+        <source>Add to calendar</source>
+      </trans-unit>
       <trans-unit id="pagination.prev">
         <source>Previous</source>
       </trans-unit>
       <trans-unit id="pagination.next">
         <source>Next</source>
-      </trans-unit>
-      <trans-unit id="ics_download.label">
-        <source>Enable ICS download</source>
-      </trans-unit>
-      <trans-unit id="ics.download">
-        <source>Add to calendar</source>
       </trans-unit>
     </body>
   </file>

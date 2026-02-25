@@ -5,8 +5,41 @@
       <trans-unit id="title">
         <target>Gedankenfolger Event</target>
       </trans-unit>
+      <trans-unit id="events_sys_folder.label">
+        <target>Veranstaltungen Ordner</target>
+      </trans-unit>
+      <trans-unit id="category_filter.label">
+        <target>Kategorie Filter</target>
+      </trans-unit>
+      <trans-unit id="category_filter.items.all.label">
+        <target>Alle</target>
+      </trans-unit>
+      <trans-unit id="category_filter.items.fairs.label">
+        <target>Messen</target>
+      </trans-unit>
+      <trans-unit id="category_filter.items.conferences.label">
+        <target>Konferenzen</target>
+      </trans-unit>
+      <trans-unit id="category_filter.items.webinar.label">
+        <target>Webinare</target>
+      </trans-unit>
+      <trans-unit id="layout.label">
+        <target>Layout</target>
+      </trans-unit>
+      <trans-unit id="layout.items.grid-3.label">
+        <target>Raster (3 Spalten)</target>
+      </trans-unit>
+      <trans-unit id="layout.items.grid-2.label">
+        <target>Raster (2 Spalten)</target>
+      </trans-unit>
+      <trans-unit id="layout.items.list.label">
+        <target>Liste</target>
+      </trans-unit>
       <trans-unit id="only_months_with_events.label">
         <target>Nur Monate mit Veranstaltungen</target>
+      </trans-unit>
+      <trans-unit id="ics_download.label">
+        <target>ICS-Download aktivieren</target>
       </trans-unit>
       <trans-unit id="month.01">
         <target>Januar</target>
@@ -44,11 +77,8 @@
       <trans-unit id="month.12">
         <target>Dezember</target>
       </trans-unit>
-      <trans-unit id="category_filter">
-        <target>Kategorie Filter</target>
-      </trans-unit>
-      <trans-unit id="layout">
-        <target>Layout</target>
+      <trans-unit id="search.label">
+        <target>Suche</target>
       </trans-unit>
       <trans-unit id="date">
         <target>Datum</target>
@@ -62,17 +92,14 @@
       <trans-unit id="visit_us">
         <target>Besuchen Sie uns in</target>
       </trans-unit>
+      <trans-unit id="ics.download">
+        <target>Zum Kalender hinzufügen</target>
+      </trans-unit>
       <trans-unit id="pagination.prev">
         <target>Zurück</target>
       </trans-unit>
       <trans-unit id="pagination.next">
         <target>Weiter</target>
-      </trans-unit>
-      <trans-unit id="ics_download.label">
-        <target>ICS-Download aktivieren</target>
-      </trans-unit>
-      <trans-unit id="ics.download">
-        <target>Zum Kalender hinzufügen</target>
       </trans-unit>
     </body>
   </file>
