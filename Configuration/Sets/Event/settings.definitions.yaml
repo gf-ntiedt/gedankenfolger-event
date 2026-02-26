@@ -5,14 +5,11 @@ categories:
 settings:
   GedankenfolgerEvent.cssmode:
     label: 'CSS loading mode'
-    description: 'Controls which CSS is loaded. Values: none | css | css_bootstrap | scss | scss_bootstrap | scss_other. scss variants require EXT:ws_scss.'
+    description: 'Controls which CSS is loaded. Values: none | css_bootstrap | scss_bootstrap. scss_bootstrap requires EXT:ws_scss.'
     category: GedankenfolgerEvent
     type: string
-    default: 'css'
+    default: 'none'
     enum:
       none: 'None'
-      css: 'CSS only'
       css_bootstrap: 'CSS with Bootstrap'
-      scss: 'SCSS only'
       scss_bootstrap: 'SCSS with Bootstrap'
-      scss_other: 'SCSS from other package'

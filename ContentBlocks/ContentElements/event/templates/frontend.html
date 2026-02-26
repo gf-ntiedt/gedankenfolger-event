@@ -107,12 +107,11 @@
             </f:case>
         </f:switch>
 
-    
         <div class="container">
             <div class="row events-list g-5 mt-5">
                 <f:if condition="{events}">
                     <f:for each="{events}" as="event">
-                            <div class="{layoutClass} event-card" data-category="{event.data.category}" data-date-from="{event.data.date_from -> f:format.date(format:'Y-m-d\\TH:i:s')}" data-date-to="{event.data.date_to -> f:format.date(format:'Y-m-d\\TH:i:s')}">
+                        <div class="{layoutClass} event-card" data-category="{event.data.category}" data-date-from="{event.data.date_from -> f:format.date(format:'Y-m-d\\TH:i:s')}" data-date-to="{event.data.date_to -> f:format.date(format:'Y-m-d\\TH:i:s')}">
                             <article class="card h-100">
                                 <f:if condition="{event.asset.0}">
                                     <f:image image="{event.asset.0}" class="card-img-top img-fluid" alt="{event.asset.0.alternative}" title="{event.asset.0.title}" width="500"/>
@@ -146,16 +145,15 @@
                                             </div>
                                         </div>
                                     </f:if>
-                                    
+
                                     <f:if condition="{event.data.teaser}">
                                         <p class="card-text pt-2">{event.data.teaser}</p>
                                     </f:if>
-                                    
+
                                     <f:if condition="{event.data.hall} && {event.data.stand}">
                                         <p class="card-text">{f:translate(key: '{cb:languagePath()}:visit_us')} {f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:hall.label')} {event.data.hall} / {f:translate(key: '{cb:languagePath(name:\'gedankenfolger/events\')}:stand.label')} {event.data.stand}</p>
                                     </f:if>
-                                    
-                                    
+
                                     <f:if condition="{event.data.description}">
                                         {event.data.description -> f:format.html()}
                                     </f:if>

@@ -2,28 +2,10 @@
 #### PAGE ####
 ##############
 
-['{$GedankenfolgerEvent.cssmode}' == 'css']
-    page {
-        includeCSS {
-            event = EXT:gedankenfolger_event/Resources/Public/Css/event.css
-        }
-    }
-[END]
-
 ['{$GedankenfolgerEvent.cssmode}' == 'css_bootstrap']
     page {
         includeCSS {
             event = EXT:gedankenfolger_event/Resources/Public/Css/bootstrap_events.css
-        }
-    }
-[END]
-
-['{$GedankenfolgerEvent.cssmode}' == 'scss']
-    page {
-        includeCSS {
-            event = EXT:gedankenfolger_event/Resources/Public/Scss/event_standalone.scss
-            event.outputfile = EXT:gedankenfolger_event/Resources/Public/Css/event_standalone.css
-            event.sourceMap = true
         }
     }
 [END]
@@ -37,10 +19,3 @@
         }
     }
 [END]
-
-## If you need a condition to load the SCSS from another package, you can use the following condition and adjust the path to the SCSS file accordingly. Make sure to replace 'scss_other' with the actual value you want to use in the setting.
-#['{$GedankenfolgerEvent.cssmode}' == 'scss_other']
-#page{
-#    includeCSS {
-#    }}
-#[END]

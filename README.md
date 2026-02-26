@@ -119,15 +119,10 @@
   <li>
     <strong>GedankenfolgerEvent.cssmode</strong>: Controls which CSS is loaded. Possible values:
     <ul>
-      <li><code>none</code> (default): No CSS is loaded by the extension.</li>
-      <li><code>css</code>: Load pre-compiled event CSS without Bootstrap.</li>
-      <li><code>css_bootstrap</code>: Load pre-compiled event CSS including full Bootstrap.</li>
-      <li><code>scss</code>: Compile event SCSS without Bootstrap via <code>ws_scss</code>.</li>
-      <li><code>scss_bootstrap</code>: Compile full Bootstrap + event SCSS via <code>ws_scss</code>.</li>
+      <li><code>none</code> (default): No CSS is loaded by the extension. Use this when your sitepackage already loads Bootstrap.</li>
+      <li><code>css_bootstrap</code>: Load pre-compiled Bootstrap + event CSS. No additional extensions required.</li>
+      <li><code>scss_bootstrap</code>: Compile Bootstrap + event SCSS on the fly. Requires <code>EXT:ws_scss</code>.</li>
     </ul>
-    The <code>css</code> and <code>css_bootstrap</code> variants use pre-compiled files and require no additional extensions.
-    The <code>scss</code> and <code>scss_bootstrap</code> variants require <code>EXT:ws_scss</code>.
-    The <code>css</code> and <code>scss</code> variants rely on Bootstrap CSS custom properties (<code>--bs-*</code>) being provided by another source (e.g. your sitepackage).
   </li>
 </ul>
 
