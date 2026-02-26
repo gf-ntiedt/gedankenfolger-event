@@ -116,9 +116,19 @@
 <h4>Site Set Settings</h4>
 <p>Configure in your site settings (<code>config/sites/[yoursite]/settings.yaml</code>):</p>
 <ul>
-  <li><strong>GedankenfolgerEvent.bootstrapcss</strong>: Load Bootstrap CSS (includes Bootstrap core).</li>
-  <li><strong>GedankenfolgerEvent.bootstrapscss</strong>: Load Bootstrap SCSS and compile to CSS (requires <code>ws_scss</code> extension).</li>
-  <li><strong>GedankenfolgerEvent.gfsitepackagescss</strong>: Load SCSS with Gedankenfolger Sitepackage integration (requires <code>ws_scss</code> extension).</li>
+  <li>
+    <strong>GedankenfolgerEvent.cssmode</strong>: Controls which CSS is loaded. Possible values:
+    <ul>
+      <li><code>none</code> (default): No CSS is loaded by the extension.</li>
+      <li><code>css</code>: Load pre-compiled event CSS without Bootstrap.</li>
+      <li><code>css_bootstrap</code>: Load pre-compiled event CSS including full Bootstrap.</li>
+      <li><code>scss</code>: Compile event SCSS without Bootstrap via <code>ws_scss</code>.</li>
+      <li><code>scss_bootstrap</code>: Compile full Bootstrap + event SCSS via <code>ws_scss</code>.</li>
+    </ul>
+    The <code>css</code> and <code>css_bootstrap</code> variants use pre-compiled files and require no additional extensions.
+    The <code>scss</code> and <code>scss_bootstrap</code> variants require <code>EXT:ws_scss</code>.
+    The <code>css</code> and <code>scss</code> variants rely on Bootstrap CSS custom properties (<code>--bs-*</code>) being provided by another source (e.g. your sitepackage).
+  </li>
 </ul>
 
 <h4>Event Categories</h4>

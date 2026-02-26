@@ -1,0 +1,18 @@
+// Standalone event styles — no Bootstrap import required.
+// Defines only the Bootstrap SCSS variables used in _bootstrap_event.scss
+// so that it compiles without the full Bootstrap stack.
+
+$prefix: 'bs-' !default;
+$h2-font-size: 1.5rem !default;
+$font-size-lg: 1.125rem !default;
+$dark: #212529 !default;
+$spacers: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem,
+) !default;
+
+@import 'bootstrap_event';

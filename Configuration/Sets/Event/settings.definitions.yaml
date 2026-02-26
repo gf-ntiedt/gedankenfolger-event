@@ -3,21 +3,16 @@ categories:
     label: 'Gedankenfolger Event'
 
 settings:
-  GedankenfolgerEvent.bootstrapcss:
-    label: 'Load Bootstrap CSS'
-    description: 'incl. bootstap core'
+  GedankenfolgerEvent.cssmode:
+    label: 'CSS loading mode'
+    description: 'Controls which CSS is loaded. Values: none | css | css_bootstrap | scss | scss_bootstrap | scss_other. scss variants require EXT:ws_scss.'
     category: GedankenfolgerEvent
-    type: bool
-    default: 0
-  GedankenfolgerEvent.bootstrapscss:
-    label: 'Load Bootstrap SCSS'
-    description: 'incl. bootstap core. EXT: ws_scss is required for this option to work.'
-    category: GedankenfolgerEvent
-    type: bool
-    default: 0
-  GedankenfolgerEvent.gfsitepackagescss:
-    label: 'Load SCSS with Gedankenfolger Sitepackage'
-    description: 'EXT: ws_scss is required for this option to work.'
-    category: GedankenfolgerEvent
-    type: bool
-    default: 0
+    type: string
+    default: 'css'
+    enum:
+      none: 'None'
+      css: 'CSS only'
+      css_bootstrap: 'CSS with Bootstrap'
+      scss: 'SCSS only'
+      scss_bootstrap: 'SCSS with Bootstrap'
+      scss_other: 'SCSS from other package'
