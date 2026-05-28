@@ -27,6 +27,9 @@
         <a href="#notes">Notes</a>
     </li>
     <li>
+        <a href="#acknowledgements">Acknowledgements</a>
+    </li>
+    <li>
         <a href="#noticetrademark">Notice on Logo / Trademark Use</a>
     </li>
 </ol>
@@ -148,6 +151,18 @@
   <li>The extension uses Content Blocks for easy customization and extension.</li>
   <li>Date formatting and display can be customized via Fluid templates.</li>
   <li>Images support common web formats: jpg, jpeg, png, and webp.</li>
+</ul>
+
+<h3 id="acknowledgements">
+    Acknowledgements
+</h3>
+<p>
+    This extension builds on the following open source projects:
+</p>
+<ul>
+    <li><a href="https://github.com/FriendsOfTYPO3/content-blocks" target="_blank">TYPO3 Content Blocks</a></li>
+    <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap Framework</a></li>
+    <li><a href="https://github.com/WapplerSystems/ws_scss" target="_blank">SASS Compiler for TYPO3</a></li>
 </ul>
 
 <h3 id="noticetrademark">
