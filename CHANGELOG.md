@@ -1,6 +1,20 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## [13.3.6] - 2026-05-28
+
+### Documentation
+
+- **readme:** Add acknowledgements section with open source project links (402e422)
+
+
+## [13.3.5] - 2026-05-28
+
+### Documentation
+
+- **readme:** Add changelog section with git-cliff reference (91d5a6a)
+
+
 ## [13.3.5] - 2026-05-28
 
 ### Documentation
