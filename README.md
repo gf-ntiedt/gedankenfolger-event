@@ -55,6 +55,13 @@
     </li>
 </ol>
 
+<h3 id="changelog">
+    Changelog
+</h3>
+<p>
+    See <a href="CHANGELOG.md">CHANGELOG.md</a> — generated with <a href="https://git-cliff.org">git-cliff</a> from Conventional Commits.
+</p>
+
 <h3 id="install">
     Install
 </h3>
