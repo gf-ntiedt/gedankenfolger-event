@@ -1,7 +1,5 @@
 <?php
 
-$_EXTKEY = 'gedankenfolger_event';
-
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Gedankenfolger Event',
     'description' => 'Events',
@@ -10,7 +8,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'niels.tiedt@gedankenfolger.de',
     'state' => 'stable',
     'clearCacheOnLoad' => 1,
-    'version' => '14.0.2',
+    'version' => '14.0.5',
     'autoload' => [
         'psr-4' => [
             'Gedankenfolger\\GedankenfolgerEvent\\' => 'Classes',

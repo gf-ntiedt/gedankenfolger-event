@@ -1,6 +1,55 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## [14.0.5] - 2026-05-29
+
+### Documentation
+
+- **readme:** Move changelog and acknowledgements before notes section (b9e8ef6)
+
+
+## [14.0.4] - 2026-05-28
+
+### Documentation
+
+- **readme:** Add acknowledgements section with open source project links (78083a6)
+
+
+## [14.0.3] - 2026-05-28
+
+### Documentation
+
+- **readme:** Add changelog section with git-cliff reference (d2161ba)
+
+
+## [14.0.2] - 2026-05-22
+
+### Added
+
+- **ter:** Add ext_emconf.php for TER publishing (ae46627)
+
+
+## [14.0.1] - 2026-05-22
+
+### Changed
+
+- Apply TYPO3 CGL via php-cs-fixer (b462600)
+
+
+### Fixed
+
+- **events:** Use correct 'allowed' property for File fields in ContentBlocks config (9a7967f)
+
+
+## [14.0.0] - 2026-04-24
+
+### Miscellaneous
+
+- Update to version 13.3.4 (62a21e8)
+
+- Migrate from v13 to v14 (18363c2)
+
+
 ## [14.0.4] - 2026-05-28
 
 ### Documentation
