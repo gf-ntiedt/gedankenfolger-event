@@ -24,10 +24,13 @@
         <a href="#options">Options</a>
     </li>
     <li>
-        <a href="#notes">Notes</a>
+        <a href="#changelog">Changelog</a>
     </li>
     <li>
         <a href="#acknowledgements">Acknowledgements</a>
+    </li>
+    <li>
+        <a href="#notes">Notes</a>
     </li>
     <li>
         <a href="#noticetrademark">Notice on Logo / Trademark Use</a>
@@ -57,13 +60,6 @@
         Bootstrap CSS/SCSS integration with flexible loading options
     </li>
 </ol>
-
-<h3 id="changelog">
-    Changelog
-</h3>
-<p>
-    See <a href="CHANGELOG.md">CHANGELOG.md</a> — generated with <a href="https://git-cliff.org">git-cliff</a> from Conventional Commits.
-</p>
 
 <h3 id="install">
     Install
@@ -143,15 +139,12 @@
   <li><strong>Webinar</strong>: Online events and webinars.</li>
 </ul>
 
-<h3 id="notes">
-    Notes
+<h3 id="changelog">
+    Changelog
 </h3>
-<ul>
-  <li>Events are stored as custom records in the table <code>tx_gedankenfolger_event</code>.</li>
-  <li>The extension uses Content Blocks for easy customization and extension.</li>
-  <li>Date formatting and display can be customized via Fluid templates.</li>
-  <li>Images support common web formats: jpg, jpeg, png, and webp.</li>
-</ul>
+<p>
+    See <a href="CHANGELOG.md">CHANGELOG.md</a> — generated with <a href="https://git-cliff.org">git-cliff</a> from Conventional Commits.
+</p>
 
 <h3 id="acknowledgements">
     Acknowledgements
@@ -163,6 +156,16 @@
     <li><a href="https://github.com/FriendsOfTYPO3/content-blocks" target="_blank">TYPO3 Content Blocks</a></li>
     <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap Framework</a></li>
     <li><a href="https://github.com/WapplerSystems/ws_scss" target="_blank">SASS Compiler for TYPO3</a></li>
+</ul>
+
+<h3 id="notes">
+    Notes
+</h3>
+<ul>
+  <li>Events are stored as custom records in the table <code>tx_gedankenfolger_event</code>.</li>
+  <li>The extension uses Content Blocks for easy customization and extension.</li>
+  <li>Date formatting and display can be customized via Fluid templates.</li>
+  <li>Images support common web formats: jpg, jpeg, png, and webp.</li>
 </ul>
 
 <h3 id="noticetrademark">
