@@ -1,12 +1,25 @@
 {
     "name": "gedankenfolger/gedankenfolger-event",
-    "description": "Events",
+    "description": "TYPO3 14 Event extension with Content Blocks, Site Set, Bootstrap CSS/SCSS, ICS export.",
     "version": "14.0.5",
     "type": "typo3-cms-extension",
     "license": [
         "GPL-2.0-or-later"
     ],
+    "authors": [
+        {
+            "name": "Niels Tiedt, Gedankenfolger GmbH",
+            "email": "niels.tiedt@gedankenfolger.de",
+            "homepage": "https://www.gedankenfolger.de",
+            "role": "Developer"
+        }
+    ],
     "require": {
+        "typo3/cms-core": "^14.3",
+        "friendsoftypo3/content-blocks": "^2.0"
+    },
+    "suggest": {
+        "wapplersystems/ws-scss": "Required only when GedankenfolgerEvent.cssmode is set to scss_bootstrap"
     },
     "autoload": {
         "psr-4": {
@@ -15,7 +28,10 @@
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "gedankenfolger_event"
+            "extension-key": "gedankenfolger_event",
+            "Package": {
+                "providesPackages": {}
+            }
         }
     }
 }
