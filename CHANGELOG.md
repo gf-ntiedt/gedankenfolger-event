@@ -1,6 +1,26 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+
+## [13.3.8] - 2026-09-21
+
+### Changed
+
+- **icon:** Redesign extension icon with brand colors (0a2e3d3)
+
+
+### Documentation
+
+- Add LICENSE-ICONS and document template overrides, TYPO3 14 branch pointer (2d7ce24)
+
+
+### Fixed
+
+- **composer:** Add TER-required dependency and packaging metadata (5aa644d)
+
+- **content-blocks:** Use allowed instead of appearance for file extension restriction (34ab605)
+
+
 ## [13.3.7] - 2026-05-29
 
 ### Documentation
@@ -13,27 +33,6 @@ All notable changes to this project will be documented in this file.
 ### Documentation
 
 - **readme:** Add acknowledgements section with open source project links (402e422)
-
-
-## [13.3.5] - 2026-05-28
-
-### Documentation
-
-- **readme:** Add changelog section with git-cliff reference (91d5a6a)
-
-
-## [13.3.6] - 2026-05-28
-
-### Documentation
-
-- **readme:** Add acknowledgements section with open source project links (402e422)
-
-
-## [13.3.5] - 2026-05-28
-
-### Documentation
-
-- **readme:** Add changelog section with git-cliff reference (91d5a6a)
 
 
 ## [13.3.5] - 2026-05-28
