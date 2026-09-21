@@ -1,11 +1,14 @@
 <h1>TYPO3 Extension Gedankenfolger Event<br/>(gedankenfolger-event)</h1>
 <p>
     Compact event management extension using Content Blocks (Record Types + Content Elements), Site Set, Bootstrap CSS/SCSS, and vanilla JS.
+    Requires TYPO3 13.
 </p>
 <p>
     First of all many thanks to the hole TYPO3 community, all supporters of TYPO3.
     Especially to <a href="https://typo3.org/" target="_blank">TYPO3-Team</a> and <a href="https://www.gedankenfolger.de/" target="_blank">Gedankenfolger GmbH</a>.
 </p>
+
+> **TYPO3 14 support** is maintained on the [`main`](../../tree/main) branch.
 
 <h3>
     Contents of this file
@@ -22,6 +25,9 @@
     </li>
     <li>
         <a href="#options">Options</a>
+    </li>
+    <li>
+        <a href="#template-overrides">Template Overrides</a>
     </li>
     <li>
         <a href="#changelog">Changelog</a>
@@ -64,17 +70,32 @@
 <h3 id="install">
     Install
 </h3>
-<ol>
-    <li>
-        Require in Composer and activate the extension.
-    </li>
-    <li>
-        Import the site set "Gedankenfolger Event" in your site configuration.
-    </li>
-    <li>
-        (Optional) Ensure <code>ws_scss</code> is installed if you want to use SCSS compilation.
-    </li>
-</ol>
+
+<h4>1. Require via Composer</h4>
+
+```bash
+composer require gedankenfolger/gedankenfolger-event
+```
+
+Activate the extension in the TYPO3 backend (Extensions module) if not done automatically.
+
+<h4>2. Include TypoScript via Site Set</h4>
+
+Add the set to your site configuration:
+
+```yaml
+# config/sites/my-site/config.yaml
+sets:
+  - gedankenfolger/gedankenfolger-event
+```
+
+<h4>3. (Optional) SCSS compilation</h4>
+
+Only required when <code>GedankenfolgerEvent.cssmode</code> is set to <code>scss_bootstrap</code>, see <a href="#options">Options</a> below.
+
+```bash
+composer require wapplersystems/ws-scss
+```
 
 <h3 id="usage">
     Usage
@@ -139,6 +160,25 @@
   <li><strong>Webinar</strong>: Online events and webinars.</li>
 </ul>
 
+<h3 id="template-overrides">
+    Template Overrides
+</h3>
+
+The template can be overridden from your site package without modifying the extension.
+
+<h4>Template override</h4>
+
+Set `file =` directly in your sitepackage TypoScript to replace the main template:
+
+```typoscript
+tt_content.gedankenfolger_event {
+    file = EXT:my_sitepackage/Resources/Private/Extensions/GedankenfolgerEvent/frontend.html
+}
+```
+
+**Available template:**
+- `frontend.html` – main content element template
+
 <h3 id="changelog">
     Changelog
 </h3>
@@ -179,4 +219,6 @@ Use of the logo is only permitted in the form provided here. Any changes, modifi
 In forks, derivatives, or further developments of this extension, the logo may only be used if explicit consent has been granted by Gedankenfolger GmbH. Otherwise, the logo must be removed or replaced with an own, non-protected logo.
 
 All other logos and icons bundled with this extension are either subject to the TYPO3 licensing terms (The MIT License (MIT), see https://typo3.org) or are in the public domain.
+
+For full license terms covering all graphic assets, see <a href="LICENSE-ICONS">LICENSE-ICONS</a>.
 </p>
