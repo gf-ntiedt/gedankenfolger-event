@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [14.0.7] - 2026-09-21
+
+### Documentation
+
+- **license:** Add LICENSE-ICONS and document install/template override steps (a11def2)
+
+
 ## [14.0.6] - 2026-09-21
 
 ### Changed
