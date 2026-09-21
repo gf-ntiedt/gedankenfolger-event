@@ -45,8 +45,7 @@ fields:
     identifier: image
     type: File
     label: Image
-    appearance:
-      - allowedFileExtensions: "jpg,jpeg,png,webp"
+    allowed: "jpg,jpeg,png,webp"
   -
     identifier: teaser
     type: Textarea
