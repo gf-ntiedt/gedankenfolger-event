@@ -48,16 +48,19 @@
 </h3>
 <ol>
     <li>
-        Event record type with fields for title, dates (from/to), location, hall, stand, image, teaser, and rich text description
+        Event record type with fields for title, dates (from/to), location, hall, stand, floor, image, teaser, and rich text description
     </li>
     <li>
-        Three event categories: Fairs, Conferences, and Webinars with conditional fields (hall/stand for fairs)
+        Three event categories: Fairs, Conferences, and Webinars with conditional fields (hall/stand/floor for fairs)
     </li>
     <li>
         Event content element: select events from a storage folder with category filtering
     </li>
     <li>
         Multiple layout options: List, Grid (2-column), Grid (3-column), and Grid (4-column)
+    </li>
+    <li>
+        Optional dynamic filter bar (month/day navigation, search, category filter) — disabled by default for a simple, static output
     </li>
     <li>
         Optional ICS download ("Add to calendar") per event
@@ -111,7 +114,7 @@ composer require wapplersystems/ws-scss
             <li><strong>Date from/to</strong>: Event duration</li>
             <li><strong>Location</strong>: Where the event takes place</li>
             <li><strong>Category</strong>: Choose between Fairs, Conferences, or Webinar</li>
-            <li><strong>Hall/Stand</strong>: Additional fields for fairs</li>
+            <li><strong>Hall/Stand/Floor</strong>: Additional fields for fairs</li>
             <li><strong>Image</strong>: Event image (jpg, jpeg, png, webp)</li>
             <li><strong>Teaser</strong>: Short description</li>
             <li><strong>Description</strong>: Full rich text description</li>
@@ -137,6 +140,7 @@ composer require wapplersystems/ws-scss
   <li><strong>Events folder</strong>: Select the sysfolder containing your event records.</li>
   <li><strong>Category filter</strong>: Show all events or filter by specific category (Fairs, Conferences, Webinar).</li>
   <li><strong>Layout</strong>: Choose between List, Grid (2 columns), Grid (3 columns), or Grid (4 columns).</li>
+  <li><strong>Enable filters</strong>: When enabled, shows the month/day navigation, search field, and category filter bar above the events. Disabled by default — a simple static list/grid is shown without this bar.</li>
   <li><strong>ICS download</strong>: When enabled, shows an "Add to calendar" link on each event card.</li>
 </ul>
 
@@ -155,7 +159,7 @@ composer require wapplersystems/ws-scss
 
 <h4>Event Categories</h4>
 <ul>
-  <li><strong>Fairs</strong>: Trade shows and exhibitions with additional fields for hall and stand numbers.</li>
+  <li><strong>Fairs</strong>: Trade shows and exhibitions with additional fields for hall, stand, and floor.</li>
   <li><strong>Conferences</strong>: Professional conferences and symposiums.</li>
   <li><strong>Webinar</strong>: Online events and webinars.</li>
 </ul>
