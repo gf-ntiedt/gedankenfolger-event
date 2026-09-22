@@ -51,6 +51,20 @@
           </be:link.editRecord>
         </li>
 
+        <f:if condition="{data.enable_filters}">
+          <li class="list-group-item d-flex justify-content-between">
+            <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_enable_filters">
+              <f:translate key="{cb:languagePath()}:enable_filters.label" />
+            </be:link.editRecord>
+            <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_enable_filters">
+              <f:if condition="{data.enable_filters}">
+                <f:then><core:icon identifier="actions-check-circle" size="small" /></f:then>
+                <f:else><core:icon identifier="actions-circle" size="small" /></f:else>
+              </f:if>
+            </be:link.editRecord>
+          </li>
+        </f:if>
+
         <f:if condition="{data.ics_download}">
           <li class="list-group-item d-flex justify-content-between">
             <be:link.editRecord uid="{data.uid}" table="tt_content" fields="gedankenfolger_event_ics_download">

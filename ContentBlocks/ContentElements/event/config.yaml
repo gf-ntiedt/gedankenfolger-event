@@ -7,7 +7,6 @@ fields:
   -
     identifier: TYPO3/Header
     type: Basic
-    useExistingField: true
   - identifier: events_sys_folder
     type: Relation
     label: Events folder
@@ -46,6 +45,12 @@ fields:
         value: grid-3
       - label: Grid (4 columns)
         value: grid-4
+  -
+    identifier: enable_filters
+    type: Checkbox
+    renderType: checkboxToggle
+    label: Enable filters
+    default: 0
   -
     identifier: ics_download
     type: Checkbox
