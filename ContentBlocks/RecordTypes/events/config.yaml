@@ -41,6 +41,11 @@ fields:
         type: Text
         label: Stand
         displayCond: 'FIELD:category:=:fairs'
+      -
+        identifier: floor
+        type: Text
+        label: Floor
+        displayCond: 'FIELD:category:=:fairs'
   -
     identifier: image
     type: File

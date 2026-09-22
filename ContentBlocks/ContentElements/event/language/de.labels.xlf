@@ -38,6 +38,9 @@
       <trans-unit id="layout.items.grid-4.label">
         <target>Raster (4 Spalten)</target>
       </trans-unit>
+      <trans-unit id="enable_filters.label">
+        <target>Filter aktivieren</target>
+      </trans-unit>
       <trans-unit id="ics_download.label">
         <target>ICS-Download aktivieren</target>
       </trans-unit>

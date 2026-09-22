@@ -29,6 +29,9 @@
       <trans-unit id="stand.label">
         <source>Stand</source>
       </trans-unit>
+      <trans-unit id="floor.label">
+        <source>Floor</source>
+      </trans-unit>
       <trans-unit id="image.label">
         <source>Image</source>
       </trans-unit>

@@ -29,6 +29,9 @@
       <trans-unit id="stand.label">
         <target>Stand</target>
       </trans-unit>
+      <trans-unit id="floor.label">
+        <target>Etage</target>
+      </trans-unit>
       <trans-unit id="image.label">
         <target>Bild</target>
       </trans-unit>
