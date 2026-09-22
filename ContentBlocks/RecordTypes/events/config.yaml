@@ -62,6 +62,11 @@ fields:
     enableRichtext: true
     richtextConfiguration: full
   -
+    identifier: link
+    type: Link
+    label: Link
+    nullable: true
+  -
     identifier: tab_category
     type: Tab
     label: Category

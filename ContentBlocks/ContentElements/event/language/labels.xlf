@@ -98,6 +98,9 @@
       <trans-unit id="ics.download">
         <source>Add to calendar</source>
       </trans-unit>
+      <trans-unit id="link.text">
+        <source>More information</source>
+      </trans-unit>
       <trans-unit id="pagination.prev">
         <source>Previous</source>
       </trans-unit>

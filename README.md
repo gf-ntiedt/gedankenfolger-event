@@ -48,7 +48,7 @@
 </h3>
 <ol>
     <li>
-        Event record type with fields for title, dates (from/to), location, hall, stand, floor, image, teaser, and rich text description
+        Event record type with fields for title, dates (from/to), location, hall, stand, floor, image, teaser, rich text description, and an optional link
     </li>
     <li>
         Three event categories: Fairs, Conferences, and Webinars with conditional fields (hall/stand/floor for fairs)
@@ -118,6 +118,7 @@ composer require wapplersystems/ws-scss
             <li><strong>Image</strong>: Event image (jpg, jpeg, png, webp)</li>
             <li><strong>Teaser</strong>: Short description</li>
             <li><strong>Description</strong>: Full rich text description</li>
+            <li><strong>Link</strong>: Optional link, rendered as a "More information" button</li>
         </ul>
     </li>
     <li>

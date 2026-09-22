@@ -4,7 +4,10 @@
     data-namespace-typo3-fluid="true"
 >
     <f:variable name="dateFormat"><f:translate key="{cb:languagePath(name: 'gedankenfolger/events')}:format.date" /></f:variable>
-    <section class="{data.CType} my-5">
+    <section id="c{data.uid}" class="{data.CType} my-5">
+        <f:if condition="{data._LOCALIZED_UID}">
+            <a id="c{data._LOCALIZED_UID}"></a>
+        </f:if>
         <f:if condition="{data.gedankenfolger_event_enable_filters}">
             <div class="container-fluid bg-secondary">
 
@@ -158,6 +161,15 @@
 
                                     <f:if condition="{event.data.description}">
                                         {event.data.description -> f:format.html()}
+                                    </f:if>
+
+                                    <f:if condition="{event.data.link.url}">
+                                        <f:link.typolink parameter="{event.data.link}" class="btn btn-sm btn-outline-secondary mt-3">
+                                            <f:if condition="{event.data.link.title}">
+                                                <f:then>{event.data.link.title}</f:then>
+                                                <f:else>{f:translate(key: '{cb:languagePath()}:link.text')}</f:else>
+                                            </f:if>
+                                        </f:link.typolink>
                                     </f:if>
 
                                     <f:if condition="{data.gedankenfolger_event_ics_download}">
