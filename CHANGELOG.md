@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [14.1.0] - 2026-09-22
+
+### Added
+
+- **event:** Add floor field, enable_filters toggle and fix grid layout (2053259)
+
+
+### Documentation
+
+- **event:** Document floor field and enable_filters toggle (5b16f74)
+
+
 ## [14.0.7] - 2026-09-21
 
 ### Documentation
