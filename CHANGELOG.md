@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [13.5.0] - 2026-09-22
+
+### Added
+
+- **event:** Add optional link field to events (00e4e67)
+
+
 ## [13.4.0] - 2026-09-22
 
 ### Added
