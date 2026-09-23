@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Gedankenfolger\GedankenfolgerEvent\:
+    resource: '../Classes/*'
+
+  # Tagged for TypoScript dataProcessing lookup via ContentDataProcessor's
+  # DataProcessorRegistry, matching TYPO3 core's own data processors.
+  Gedankenfolger\GedankenfolgerEvent\DataProcessing\LinkFieldProcessor:
+    tags:
+      - { name: 'data.processor', identifier: 'gedankenfolger-event-link-field' }
