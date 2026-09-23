@@ -13,6 +13,10 @@ tt_content{
                         references.fieldName = image
                         as = asset
                     }
+                    20 = gedankenfolger-event-link-field
+                    20 {
+                        fieldName = link
+                    }
                 }
             }
             30 = Gedankenfolger\GedankenfolgerEvent\DataProcessing\EventMonthsProcessor

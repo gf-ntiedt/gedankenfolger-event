@@ -65,7 +65,6 @@ fields:
     identifier: link
     type: Link
     label: Link
-    nullable: true
   -
     identifier: tab_category
     type: Tab
