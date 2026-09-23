@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [13.6.0] - 2026-09-23
+
+### Fixed
+
+- **event:** ⚠ **BREAKING** Resolve link field to TypolinkParameter object (7c43e49)
+  - **BREAKING CHANGE:** the link field is no longer nullable (DB column is
+now NOT NULL DEFAULT ''). An unset link now arrives as an empty
+string instead of NULL; LinkFieldProcessor treats both the same, but
+any external code reading tx_gedankenfolger_event.link directly and
+relying on NULL for "no link" must be updated.
+
+
 ## [13.5.0] - 2026-09-22
 
 ### Added
