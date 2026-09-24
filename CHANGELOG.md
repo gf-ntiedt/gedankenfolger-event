@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [13.6.1] - 2026-09-24
+
+### Changed
+
+- **event:** Add missing blank line after <?php opening tag (bec70e4)
+
+
 ## [13.6.0] - 2026-09-23
+
+### Documentation
+
+- **changelog:** Regenerate for 13.6.0 release (bfd4aab)
+
 
 ### Fixed
 
