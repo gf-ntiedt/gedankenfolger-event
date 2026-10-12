@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [14.3.1] - 2026-10-12
+
+### Documentation
+
+- **changelog:** Render breaking-change marker for 14.3.0 (a4df70c)
+
+
+### Fixed
+
+- **license:** Replace GPLv3 text with GPLv2 to match composer.json (dfe8166)
+
+
 ## [14.3.0] - 2026-09-23
 
 ### Fixed
