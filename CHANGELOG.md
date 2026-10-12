@@ -2,11 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [13.6.2] - 2026-10-12
+
+### Fixed
+
+- **license:** Replace GPLv3 text with GPLv2 to match composer.json (ca8a91e)
+
+
 ## [13.6.1] - 2026-09-24
 
 ### Changed
 
 - **event:** Add missing blank line after <?php opening tag (bec70e4)
+
+
+### Documentation
+
+- **changelog:** Regenerate for 13.6.1 release (6bcf52c)
 
 
 ## [13.6.0] - 2026-09-23
